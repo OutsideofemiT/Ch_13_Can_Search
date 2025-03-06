@@ -1,4 +1,3 @@
-// src/pages/SavedCandidates.tsx
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { Candidate } from '../interfaces/Candidate.interface';
@@ -24,18 +23,18 @@ const SavedCandidates: React.FC = () => {
     (((candidate.name || candidate.login) || '').toLowerCase()).includes(filter.toLowerCase())
   );
 
- // Sort candidates by name or location
-const sortedCandidates = filteredCandidates.sort((a, b) => {
-  if (sortOption === 'name') {
-    const nameA = (a.name || a.login) || '';
-    const nameB = (b.name || b.login) || '';
-    return nameA.localeCompare(nameB);
-  } else {
-    const locA = a.location || '';
-    const locB = b.location || '';
-    return locA.localeCompare(locB);
-  }
-});
+  // Sort candidates by name or location
+  const sortedCandidates = filteredCandidates.sort((a, b) => {
+    if (sortOption === 'name') {
+      const nameA = (a.name || a.login) || '';
+      const nameB = (b.name || b.login) || '';
+      return nameA.localeCompare(nameB);
+    } else {
+      const locA = a.location || '';
+      const locB = b.location || '';
+      return locA.localeCompare(locB);
+    }
+  });
 
   return (
     <div className="saved-candidates-container">
@@ -45,12 +44,12 @@ const sortedCandidates = filteredCandidates.sort((a, b) => {
           type="text"
           placeholder="Filter candidates by name"
           value={filter}
-          onChange={(e) => setFilter(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFilter(e.target.value)}
           style={{ marginRight: '1rem' }}
         />
         <select
           value={sortOption}
-          onChange={(e) => setSortOption(e.target.value as 'name' | 'location')}
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSortOption(e.target.value as 'name' | 'location')}
         >
           <option value="name">Sort by Name</option>
           <option value="location">Sort by Location</option>
