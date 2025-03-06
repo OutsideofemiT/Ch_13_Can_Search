@@ -18,9 +18,9 @@ const SavedCandidates: React.FC = () => {
     localStorage.setItem('savedCandidates', JSON.stringify(updated));
   };
 
-  // Filter candidates based on name or username
+  // Filter candidates based on name or username, safely handling undefined values
   const filteredCandidates = savedCandidates.filter(candidate =>
-    (candidate.name || candidate.login).toLowerCase().includes(filter.toLowerCase())
+    (((candidate.name || candidate.login) || '').toLowerCase()).includes(filter.toLowerCase())
   );
 
   // Sort candidates by name or location
@@ -107,4 +107,3 @@ const SavedCandidates: React.FC = () => {
 };
 
 export default SavedCandidates;
-
