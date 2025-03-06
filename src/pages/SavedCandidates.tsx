@@ -1,5 +1,6 @@
 // src/pages/SavedCandidates.tsx
-import React, { useEffect, useState } from 'react';
+import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { Candidate } from '../interfaces/Candidate.interface';
 
 const SavedCandidates: React.FC = () => {
