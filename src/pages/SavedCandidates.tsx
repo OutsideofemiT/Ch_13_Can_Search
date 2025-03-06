@@ -23,14 +23,18 @@ const SavedCandidates: React.FC = () => {
     (((candidate.name || candidate.login) || '').toLowerCase()).includes(filter.toLowerCase())
   );
 
-  // Sort candidates by name or location
-  const sortedCandidates = filteredCandidates.sort((a, b) => {
-    if (sortOption === 'name') {
-      return (a.name || a.login).localeCompare(b.name || b.login);
-    } else {
-      return (a.location || '').localeCompare(b.location || '');
-    }
-  });
+ // Sort candidates by name or location
+const sortedCandidates = filteredCandidates.sort((a, b) => {
+  if (sortOption === 'name') {
+    const nameA = (a.name || a.login) || '';
+    const nameB = (b.name || b.login) || '';
+    return nameA.localeCompare(nameB);
+  } else {
+    const locA = a.location || '';
+    const locB = b.location || '';
+    return locA.localeCompare(locB);
+  }
+});
 
   return (
     <div className="saved-candidates-container">
