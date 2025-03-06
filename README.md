@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌟 Candidate Search App
 
 Welcome to Candidate Search, an application built with React and TypeScript that lets employers easily search for potential candidates by fetching data from the GitHub API. This project demonstrates how TypeScript enhances development for more reliable, maintainable, and scalable applications. 🚀
