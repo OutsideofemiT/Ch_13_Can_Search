@@ -17,8 +17,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["react", "react-dom"]
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
+  "include": ["src"]
 }
