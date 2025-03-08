@@ -29,5 +29,8 @@
     "typescript": "^5.2.2",
     "vite": "^6.2.1"
   },
-  "types": ["@types/react", "@types/react-dom"]
+  "types": [
+    "@types/react",
+    "@types/react-dom"
+  ]
 }
