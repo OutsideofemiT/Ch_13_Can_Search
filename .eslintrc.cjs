@@ -23,6 +23,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'react/react-in-jsx-scope': 'off'  
-  },
-};
+    'react/react-in-jsx-scope': 'off'  // Disable the rule that requires React to be in scope.
+  
+}}
