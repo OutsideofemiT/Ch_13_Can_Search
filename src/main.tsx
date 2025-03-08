@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-// [main.tsx](http://_vscodecontentref_/6)
-/// <reference types="react" />
-/// <reference types="react-dom" />
-
-=======
 // src/main.tsx
->>>>>>> 3a050a28a51872a11551bc2d1555d81b8458e6b1
 import * as ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
