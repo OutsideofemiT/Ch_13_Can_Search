@@ -8,8 +8,9 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "clean-install": "rm -rf node_modules && npm install"
-  },
+    "clean-install": "rm -rf node_modules && npm install",
+  "postinstall": "ls node_modules/@types"
+},
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
