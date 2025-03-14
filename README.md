@@ -6,7 +6,7 @@ Welcome to Candidate Search, an application built with React and TypeScript that
 
 ## 📸 Preview
 
-![alt text](image.png)
+![alt text](../CH_13/public/assets/CanSearch.png)
 
 ---
 
