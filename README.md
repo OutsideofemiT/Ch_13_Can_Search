@@ -13,7 +13,7 @@ Welcome to Candidate Search, an application built with React and TypeScript that
 
 ## 🔗 Live Demo
 
-Check out the live demo on [Render](https://render.com/) or your preferred hosting platform.
+Check out the live demo (https://candidate-search-ihmu.onrender.com)
 
 ---
 
